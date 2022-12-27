@@ -1,0 +1,15 @@
+{
+    "serviceName": "lightsail",
+    "containers": {
+        "lightsail-container": {
+            "image": ":lightsail.latest.2",
+            "ports": {
+                "8000": "HTTP"
+            }
+        }
+    },
+    "publicEndpoint": {
+        "containerName": "lightsail-container",
+        "containerPort": 8000
+    }
+}
