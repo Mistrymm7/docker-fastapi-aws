@@ -6,7 +6,7 @@ WORKDIR /code
 # Install app dependencies
 COPY ./requirements.txt /code/requirements.txt
 
-RUN pip install -r --no-cache-dir --upgrade -r requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 # Bundle app source
 COPY . .
