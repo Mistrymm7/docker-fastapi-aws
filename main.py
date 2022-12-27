@@ -11,7 +11,7 @@ app = gr.mount_gradio_app(app, io, path=CUSTOM_PATH)
 #Welcome
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello World Lets Go"}
 
 #Additonal
 @app.get("/{name}")
